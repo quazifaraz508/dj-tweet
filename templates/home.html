@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegance Wear - Women's Fashion</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 1.2s ease-out both;
+    }
+  </style>
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold text-pink-600 tracking-wide">Elegance <span class="text-gray-700">Wear</span></h1>
+      <nav class="space-x-6 text-sm font-semibold">
+        <a href="#" class="hover:text-pink-600 transition">Home</a>
+        <a href="#" class="hover:text-pink-600 transition">Shop</a>
+        <a href="#" class="hover:text-pink-600 transition">Collections</a>
+        <a href="#" class="hover:text-pink-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-pink-100 to-pink-200 py-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+      <div class="lg:w-1/2 fade-in">
+        <h2 class="text-5xl font-extrabold text-pink-700 mb-4 leading-tight">Unleash Your <br> Inner <span class="text-white bg-pink-600 px-2 rounded-md">Diva</span></h2>
+        <p class="text-lg text-gray-700 mb-6">Elegant, trendy, and affordable women's fashion designed for every moment.</p>
+        <a href="#" class="bg-pink-600 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-pink-700 transition transform hover:scale-105">Shop Now</a>
+      </div>
+      
+    </div>
+    
+  </section>
+  
+    
+
+  <!-- Featured Categories -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h3 class="text-4xl font-bold text-pink-700 mb-12">Explore Our <span class="text-gray-800">Collections</span></h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Card Template -->
+        <div class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-2 transition hover:shadow-xl">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80" alt="Casual Wear" class="rounded-lg mb-4 w-full h-64 object-cover">
+          <h4 class="text-xl font-semibold text-pink-600 mb-2">Casual Summer Top</h4>
+          <p class="text-sm text-gray-600 mb-2">Light & breezy top perfect for summer outings.</p>
+          <p class="text-lg font-bold text-gray-800 mb-4">₹899</p>
+          <button class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700 transition">Add to Cart</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-2 transition hover:shadow-xl">
+          <img src="https://images.unsplash.com/photo-1542068829-1115f7259450?auto=format&fit=crop&w=500&q=80" alt="Formal Dress" class="rounded-lg mb-4 w-full h-64 object-cover">
+          <h4 class="text-xl font-semibold text-pink-600 mb-2">Elegant Office Dress</h4>
+          <p class="text-sm text-gray-600 mb-2">Perfect for meetings, interviews, and evening events.</p>
+          <p class="text-lg font-bold text-gray-800 mb-4">₹1,599</p>
+          <button class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700 transition">Add to Cart</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-2 transition hover:shadow-xl">
+          <img src="https://images.unsplash.com/photo-1602810317000-730e2c36e6c8?auto=format&fit=crop&w=500&q=80" alt="Ethnic Wear" class="rounded-lg mb-4 w-full h-64 object-cover">
+          <h4 class="text-xl font-semibold text-pink-600 mb-2">Traditional Kurti Set</h4>
+          <p class="text-sm text-gray-600 mb-2">Authentic ethnic design with a modern twist.</p>
+          <p class="text-lg font-bold text-gray-800 mb-4">₹1,299</p>
+          <button class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700 transition">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-pink-100 py-20">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h3 class="text-3xl font-bold text-pink-700 mb-10">What Our Customers Say</h3>
+      <div class="bg-white p-8 rounded-xl shadow-xl">
+        <p class="text-gray-700 italic text-lg">“Elegance Wear has transformed my wardrobe. Their collection is stylish and comfortable. Highly recommend!”</p>
+        <p class="mt-4 font-semibold text-pink-600">- Ayesha R., Mumbai</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-white to-pink-50 py-8 mt-16 border-t">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+      <p>&copy; 2025 Elegance Wear. All rights reserved.</p>
+      <div class="space-x-4 mt-2 md:mt-0">
+        <a href="#" class="hover:text-pink-600">Privacy Policy</a>
+        <a href="#" class="hover:text-pink-600">Terms & Conditions</a>
+        <a href="#" class="hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-pink-600"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

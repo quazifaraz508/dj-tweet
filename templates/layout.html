@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+    <title>
+        {% block  title %}
+        Chai aur Django
+        {% endblock %}
+    </title>
+</head>
+<body class = "bg-pink-50 text-gray-800 font-sans ">
+    <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold text-pink-600 tracking-wide">Elegance <span class="text-gray-700">Wear</span></h1>
+      <nav class="space-x-6 text-sm font-semibold">
+        <a href="#" class="hover:text-pink-600 transition">Home</a>
+        <a href="#" class="hover:text-pink-600 transition">Shop</a>
+        <a href="#" class="hover:text-pink-600 transition">Collections</a>
+        <a href="#" class="hover:text-pink-600 transition">Contact</a>
+        <a href="{% url 'tweet_list' %}" class="btn">Tweet Home</a>
+        {% if user.is_authenticated %}
+        <form  method="post" action = "{% url 'logout' %}" class="inline-block ml-4">
+          {% csrf_token %}
+          <button class="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700 transition" type="submit">logout</button>
+        </form>
+        {% else %}
+        <a href="{% url 'tweet_register' %}" class="btn">Register</a>
+        <a href="{% url 'login' %}" class="btn">Login</a>
+        {% endif %}
+      </nav>
+    </div>
+  </header>
+    <div class="container">
+        {% block content %}
+        
+        {% endblock  %}
+    </div>
+</body>
+</html>
